@@ -30,7 +30,7 @@ struct AppsView : View {
                 Spacer()
                 ExportView().environmentObject(InstallVM.shared)
                 Spacer()
-                Button("Download any appaction") {
+                Button("Download any app") {
                     if let url = URL(string: "https://armconverter.com/decryptedappstore") {
                         NSWorkspace.shared.open(url)
                     }
